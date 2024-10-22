@@ -1,0 +1,11 @@
+Model Information:
+* title:	Banana Tree
+* source:	https://sketchfab.com/3d-models/banana-tree-5cb46e64d7fc40978c3d6798017eced1
+* author:	Garecra (https://sketchfab.com/Garecra)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Banana Tree" (https://sketchfab.com/3d-models/banana-tree-5cb46e64d7fc40978c3d6798017eced1) by Garecra (https://sketchfab.com/Garecra) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

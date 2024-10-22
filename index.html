@@ -23,10 +23,12 @@
     <!-- colocar  -- "debug: true" en physics para visualizar el tamaño de la solidez del objeto -->
     <a-scene physics="gravity:0; debug: false">
   
-      <a-entity movement-controls kinematic-body rotation="0 -80 0 " position="3.598 4 -18.273">
-    
-      <a-entity id="camera" camera   look-controls 
-      light="intensity:1; type:point; penumbra:0"></a-entity>
+      <a-entity movement-controls kinematic-body rotation="0 -80 0 " position="3.598 6 -18.273" >
+      <a-entity id="camera" camera   look-controls > 
+      
+      <!-- light="intensity:1; type:point; penumbra:0"  -->
+      
+      </a-entity>
       </a-entity>
 
 
@@ -38,11 +40,60 @@
       <img id="piso" src="assets/piso.jpg" >
       <img id="flyer" src="assets/flyer.png" >
 
+      <!-- Decoración -->
+      <a-asset-item id="banana" src="assets/decoracion/scene.gltf"></a-asset-item>
+      <a-asset-item id="sbanana" src="assets/decoracion/small banana/scene.gltf"></a-asset-item>
+
+
+      <!-- Espacio 1 assets -->
+      <img id="1-1" src="assets/Espacio1/1.jpg">
+      <img id="1-2" src="assets/Espacio1/2.jpg">
+      <img id="1-3" src="assets/Espacio1/3.jpg">
+      <img id="1-4" src="assets/Espacio1/4.jpg">
+      <img id="1-5" src="assets/Espacio1/5.jpg">
+      <img id="1-6" src="assets/Espacio1/6.jpg">
+      <img id="1-7" src="assets/Espacio1/7.jpg">
+      <img id="1-8" src="assets/Espacio1/8.jpg">
+      <img id="1-9" src="assets/Espacio1/9.jpg">
+      <img id="1-10" src="assets/Espacio1/10.jpg">
+      <img id="1-11" src="assets/Espacio1/11.jpg">
+      <img id="1-12" src="assets/Espacio1/12.jpg">
+      <img id="1-13" src="assets/Espacio1/13.jpg">
+
+      <!-- Espacio 2 assets -->
+      <img id="2-1" src="assets/Espacio2/1.jpg">
+      <img id="2-2" src="assets/Espacio2/2.jpg">
+      <img id="2-3" src="assets/Espacio2/3.jpg">
+      <img id="2-4" src="assets/Espacio2/4.jpg">
+      <img id="2-5" src="assets/Espacio2/5.jpg">
+      <img id="2-6" src="assets/Espacio2/6.jpg">
+      <img id="2-7" src="assets/Espacio2/7.jpg">
+      <img id="2-8" src="assets/Espacio2/8.jpg">
+      <img id="2-9" src="assets/Espacio2/9.jpg">
+      <img id="2-10" src="assets/Espacio2/10.jpg">
+   
+      <!-- Espacio 3 assets -->
+      <img id="3-1" src="assets/Espacio3/1.jpg">
+      <img id="3-2" src="assets/Espacio3/2.jpg">
+      <img id="3-3" src="assets/Espacio3/3.jpg">
+      <img id="3-4" src="assets/Espacio3/4.jpg">
+      <img id="3-5" src="assets/Espacio3/5.jpg">
+      <img id="3-6" src="assets/Espacio3/6.jpg">
+      <img id="3-7" src="assets/Espacio3/7.jpg">
+      <img id="3-8" src="assets/Espacio3/8.jpg">
+      <img id="3-9" src="assets/Espacio3/9.jpg">
+      <img id="3-10" src="assets/Espacio3/10.jpg">
+      <img id="3-11" src="assets/Espacio3/11.jpg">
+      <img id="3-12" src="assets/Espacio3/12.jpg">
+      <img id="3-13" src="assets/Espacio3/13.jpg">
+
+
 
       </a-assets>
+      <a-light type="ambient" intensity="0.4" position="-1 2 1" castShadow="true"></a-light>
 
-      <a-entity light="type: point; angle: 45; intensity: 0.5" id="luz flyer" position="0 10.471 -11.563"></a-entity>
-      <a-box src="#flyer" repeat="1 1" scale="8 10 0.03536" position="3.47453 5.4 -0.93211" rotation="" shadow="" material="" geometry="" id="flyer" static-body></a-box>      
+      <a-entity light="type: spot; angle: 30; groundColor: #fff; penumbra: 1; intensity: 0.3" id="luz flyer" position="2.98532 21.69506 -3.26403" rotation="-110 0 0"></a-entity>
+      <a-box src="#flyer" repeat="1 1" scale="4.5 8 0.03536" position="3.47453 6 -0.93211" rotation="" shadow="" material="" geometry="" id="flyer" static-body></a-box>      
       
       
       <!-- Paredes externas con colisiones -->
@@ -61,12 +112,138 @@
             <!-- Luz -->
       <!-- <a-light type="directional" intensity="0.7" position="-1 2 1" castShadow="true"></a-light> -->
 
+      
+      
+      <!-- Espacio 1 imágenes -->
+      <a-entity light="type: ambient; angle: 45; intensity: 0.4" id="luz espacio 1" position="0 10.471 -51.91801"></a-entity>
+
+      <a-entity light="type: spot; angle: 30; groundColor: #fff; penumbra: 1; intensity: 0.3" id="luz 1-1" position="-2 9.566 -34.703" rotation="-110 0 0"></a-entity>
+      <a-image src="#1-1" material="" geometry="" scale="4.5 8 1" id="1-1" position="-2 6 -30.703"></a-image>
+      
+      <a-entity light="type: spot; angle: 30; groundColor: #fff; penumbra: 1; intensity: 0.3" id="luz 1-2" position="-12 9.566 -34.703" rotation="-110 0 0"></a-entity>
+      <a-image src="#1-2" material="" geometry="" scale="9 6 1" id="1-2" position="-12 6 -30.703"></a-image>
+
+      <a-entity light="type: spot; angle: 30; groundColor: #fff; penumbra: 1; intensity: 0.3" id="luz 1-3" position="-17.933 9.566 -40" rotation="-110 0 0"></a-entity>
+      <a-image src="#1-3" material="" geometry="" scale="9 6 1" id="1-3" position="-17.933 6 -37" rotation="0 90 0"></a-image>
+
+      <a-entity light="type: spot; angle: 30; groundColor: #fff; penumbra: 1; intensity: 0.3" id="luz 1-4" position="-17.933 9.566 -52" rotation="-110 0 0"></a-entity>
+      <a-image src="#1-4" material="" geometry="" scale="9 6 1" id="1-4" position="-17.933 6 -49" rotation="0 90 0"></a-image>
+
+      <a-entity light="type: spot; angle: 30; groundColor: #fff; penumbra: 1; intensity: 0.3" id="luz 1-5" position="-17.933 9.566 -64" rotation="-110 0 0"></a-entity>
+      <a-image src="#1-5" material="" geometry="" scale="9 6 1" id="1-5" position="-17.933 6 -61" rotation="0 90 0"></a-image>
+
+      <a-entity light="type: spot; angle: 30; groundColor: #fff; penumbra: 1; intensity: 0.3" id="luz 1-6" position="-17.933 9.566 -76" rotation="-110 0 0"></a-entity>
+      <a-image src="#1-6" material="" geometry="" scale="9 6 1" id="1-6" position="-17.933 6 -73" rotation="0 90 0"></a-image>
+
+      <a-entity light="type: spot; angle: 30; groundColor: #fff; penumbra: 1; intensity: 0.3" id="luz 1-7" position="-11 9.566 -79" rotation="-110 0 0"></a-entity>
+      <a-image src="#1-7" material="" geometry="" scale="9 6 1" id="1-7" position="-11 6 -76.89821" rotation="0 180 0"></a-image>     
+
+      <a-entity light="type: spot; angle: 30; groundColor: #fff; penumbra: 1; intensity: 0.3" id="luz 1-8" position="-1 9.566 -79" rotation="-110 0 0"></a-entity>
+      <a-image src="#1-8" material="" geometry="" scale="9 6 1" id="1-8" position="-1 6 -76.89821" rotation="0 180 0"></a-image>     
+
+      <a-entity light="type: spot; angle: 30; groundColor: #fff; penumbra: 1; intensity: 0.3" id="luz 1-9" position="9 9.566 -79" rotation="-110 0 0"></a-entity>
+      <a-image src="#1-9" material="" geometry="" scale="9 6 1" id="1-9" position="9 6 -76.89821" rotation="0 180 0"></a-image>     
+
+      <a-entity light="type: spot; angle: 30; groundColor: #fff; penumbra: 1; intensity: 0.3" id="luz 1-10" position="18 9.566 -36.5" rotation="-100 0 0"></a-entity>
+      <a-image src="#1-10" material="" geometry="" scale="9 6 1" id="1-10" position="16.2 6 -36.5" rotation="0 270 0"></a-image>     
+
+      <a-entity light="type: spot; angle: 30; groundColor: #fff; penumbra: 1; intensity: 0.3" id="luz 1-11" position="18 9.566 -48.5" rotation="-100 0 0"></a-entity>
+      <a-image src="#1-11" material="" geometry="" scale="9 6 1" id="1-11" position="16.2 6 -48.5" rotation="0 270 0"></a-image>
+
+      <a-entity light="type: spot; angle: 30; groundColor: #fff; penumbra: 1; intensity: 0.3" id="luz 1-12" position="18 9.566 -60.5" rotation="-100 0 0"></a-entity>
+      <a-image src="#1-12" material="" geometry="" scale="9 6 1" id="1-12" position="16.2 6 -60.5" rotation="0 270 0"></a-image>
+
+      <a-entity light="type: spot; angle: 30; groundColor: #fff; penumbra: 1; intensity: 0.3" id="luz 1-13" position="18 9.566 -72.5" rotation="-100 0 0"></a-entity>
+      <a-image src="#1-13" material="" geometry="" scale="9 6 1" id="1-12" position="16.2 6 -72.5" rotation="0 270 0"></a-image>
+
+      
+      <!-- Espacio 2 - imágenes -->
+
+      <a-entity light="type: spot; angle: 30; groundColor: #fff; penumbra: 1; intensity: 0.3" id="luz 2-1" position="28 9.566 -34.703" rotation="-110 0 0"></a-entity>
+      <a-image src="#2-1" material="" geometry="" scale="9 6 1" id="2-1" position="28 6 -30.703"></a-image>
+
+      <a-image src="#2-2" material="" geometry="" scale="9 6 1" id="2-2" position="17.2 6 -36.5" rotation="0 90 0"></a-image>
+
+      <a-image src="#2-3" material="" geometry="" scale="9 6 1" id="2-3" position="17.2 6 -48.5" rotation="0 90 0"></a-image>
+
+      <a-image src="#2-4" material="" geometry="" scale="9 6 1" id="2-4" position="17.2 6 -60.5" rotation="0 90 0"></a-image>
+
+      <a-image src="#2-5" material="" geometry="" scale="9 6 1" id="2-5" position="17.2 6 -72.5" rotation="0 90 0"></a-image>
+
+      <a-entity light="type: spot; angle: 30; groundColor: #fff; penumbra: 1; intensity: 0.3" id="luz 2-6" position="25 9.566 -79" rotation="-110 0 0"></a-entity>
+      <a-image src="#2-6" material="" geometry="" scale="9 6 1" id="2-6" position="25 6 -76.8982" rotation="0 180 0"></a-image>
+
+      <a-entity light="type: spot; angle: 30; groundColor: #fff; penumbra: 1; intensity: 0.3" id="luz 2-7" position="40 9.566 -79" rotation="-110 0 0"></a-entity>
+      <a-image src="#2-7" material="" geometry="" scale="9 6 1" id="2-7" position="40 6 -76.89821" rotation="0 180 0"></a-image>   
+
+      <a-entity light="type: spot; angle: 30; groundColor: #fff; penumbra: 1; intensity: 0.3" id="luz 2-8" position="46 9.566 -70" rotation="-100 0 0"></a-entity>
+      <a-image src="#2-8" material="" geometry="" scale="9 6 1" id="2-11" position="46 6 -70" rotation="0 270 0"></a-image>
+
+      <a-entity light="type: spot; angle: 30; groundColor: #fff; penumbra: 1; intensity: 0.3" id="luz 2-9" position="46 9.566 -55" rotation="-100 0 0"></a-entity>
+      <a-image src="#2-9" material="" geometry="" scale="9 6 1" id="2-12" position="46 6 -55" rotation="0 270 0"></a-image>
+
+      <a-entity light="type: spot; angle: 30; groundColor: #fff; penumbra: 1; intensity: 0.3" id="luz 2-10" position="46 9.566 -40" rotation="-100 0 0"></a-entity>
+      <a-image src="#2-10" material="" geometry="" scale="9 6 1" id="2-12" position="46 6 -40" rotation="0 270 0"></a-image>
+
+      <!-- Espacio 3 - imágenes -->
+
+      <a-entity light="type: spot; angle: 30; groundColor: #fff; penumbra: 1; intensity: 0.3" id="luz 3-1" position="58 9.566 -30.703" rotation="-90 0 0"></a-entity>
+      <a-image src="#3-1" material="" geometry="" scale="9 6 1" id="3-1" position="58 6 -30.703"></a-image>
+
+      <a-entity light="type: spot; angle: 30; groundColor: #fff; penumbra: 1; intensity: 0.3" id="luz 3-2" position="46 9.566 -70" rotation="-90 0 0"></a-entity>
+      <a-image src="#3-2" material="" geometry="" scale="9 6 1" id="3-2" position="47.3 6 -70" rotation="0 90 0"></a-image>
+
+      <a-entity light="type: spot; angle: 30; groundColor: #fff; penumbra: 1; intensity: 0.3" id="luz 3-3" position="46 9.566 -55" rotation="-90 0 0"></a-entity>
+      <a-image src="#3-3" material="" geometry="" scale="9 6 1" id="3-3" position="47.3 6 -55" rotation="0 90 0"></a-image>
+
+      <a-entity light="type: spot; angle: 30; groundColor: #fff; penumbra: 1; intensity: 0.3" id="luz 3-4" position="46 9.566 -40" rotation="-90 0 0"></a-entity>
+      <a-image src="#3-4" material="" geometry="" scale="9 6 1" id="3-4" position="47.3 6 -40" rotation="0 90 0"></a-image>
+
+      <a-entity light="type: spot; angle: 30; groundColor: #fff; penumbra: 1; intensity: 0.3" id="luz 3-5" position="54 9.566 -76" rotation="-90 0 0"></a-entity>
+      <a-image src="#3-5" material="" geometry="" scale="9 6 1" id="3-5" position="54 6 -76" rotation="0 180 0"></a-image>></a-image>
+
+      <a-entity light="type: spot; angle: 30; groundColor: #fff; penumbra: 1; intensity: 0.3" id="luz 3-6" position="69 9.566 -76" rotation="-90 0 0"></a-entity>
+      <a-image src="#3-6" material="" geometry="" scale="9 6 1" id="3-6" position="69 6 -76" rotation="0 180 0"></a-image>></a-image>
+      
+      <a-entity light="type: spot; angle: 30; groundColor: #fff; penumbra: 1; intensity: 0.3" id="luz 3-7" position="78 9.566 -70" rotation="-90 0 0"></a-entity>
+      <a-image src="#3-7" material="" geometry="" scale="9 6 1" id="3-7" position="78 6 -70" rotation="0 270 0"></a-image>></a-image>
+
+      <a-entity light="type: spot; angle: 30; groundColor: #fff; penumbra: 1; intensity: 0.3" id="luz 3-8" position="78 9.566 -60" rotation="-90 0 0"></a-entity>
+      <a-image src="#3-8" material="" geometry="" scale="9 6 1" id="3-8" position="78 6 -60" rotation="0 270 0"></a-image>></a-image>
+
+      <a-entity light="type: spot; angle: 30; groundColor: #fff; penumbra: 1; intensity: 0.3" id="luz 3-9" position="78 9.566 -50" rotation="-90 0 0"></a-entity>
+      <a-image src="#3-9" material="" geometry="" scale="9 6 1" id="3-9" position="78 6 -50" rotation="0 270 0"></a-image>></a-image>
+
+      <a-entity light="type: spot; angle: 30; groundColor: #fff; penumbra: 1; intensity: 0.3" id="luz 3-9" position="78 9.566 -40" rotation="-90 0 0"></a-entity>
+      <a-image src="#3-10" material="" geometry="" scale="9 6 1" id="3-10" position="78 6 -40" rotation="0 270 0"></a-image>></a-image>
+
+      <a-entity light="type: spot; angle: 30; groundColor: #fff; penumbra: 1; intensity: 0.3" id="luz 3-9" position="78 9.566 -30" rotation="-90 0 0"></a-entity>
+      <a-image src="#3-11" material="" geometry="" scale="9 6 1" id="3-11" position="78 6 -30" rotation="0 270 0"></a-image>></a-image>
+
       <!-- Plano (suelo) -->d
       <a-box src="#piso" repeat="20 10"scale="100 0.1 100" rotation="" position="31.803 0.01 -30.96604" material="" static-body></a-box>
       <a-box src="#techo" scale="100 0.1 100" rotation="0 90 0"  position="31.803 12 -30.96604" material=" repeat: 2 2"   ></a-box>
 
-      <!-- Cielo -->
-      <!-- <a-sky color="#ECECEC"></a-sky> -->
-    </a-scene>
+      
+
+      <!-- Decoración -->
+      <a-entity id="banana1" gltf-model="#banana" 
+      scale="3 3 3"
+      position="-14 0 -2.9"></a-entity>
+
+      <a-entity id="banana2" gltf-model="#banana"  scale="2.91036 2.91036 2.91036" position="-14.3372 0.07075 -26.13082"></a-entity>
+
+      <a-entity id="banana3" gltf-model="#sbanana"  scale="3 3 3" position="72.69536 1.5 -2.2951"></a-entity>
+
+      <a-entity id="banana4" gltf-model="#sbanana"  scale="3 3 3" position="21.01511 1.5 -2.31601"></a-entity>
+
+      <a-entity id="banana5" gltf-model="assets/decoracion/small banana/scene.gltf" scale="3 3 2.91" position="-16.81081 1.42426 -31.71625"></a-entity>
+
+      <a-entity id="banana6" gltf-model="assets/decoracion/small banana/scene.gltf" scale="3 3 2.91" position="18.36814 1.42426 -31.71625"></a-entity>
+
+      <a-entity id="banana7" gltf-model="assets/decoracion/small banana/scene.gltf" scale="3 3 2.91" position="18.36814 1.42426 -31.71625"></a-entity>
+
+      <a-entity id="banana8" gltf-model="assets/decoracion/small banana/scene.gltf" scale="3 3 2.91" position="48.78899 1.42426 -31.71625"></a-entity>
+      </a-scene>
   </body>
 </html>
