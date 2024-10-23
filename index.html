@@ -23,7 +23,7 @@
     <!-- colocar  -- "debug: true" en physics para visualizar el tamaño de la solidez del objeto -->
     <a-scene physics="gravity:0; debug: false">
   
-      <a-entity movement-controls kinematic-body rotation="0 -80 0 " position="3.598 6 -18.273" >
+      <a-entity movement-controls kinematic-body rotation="0 -90 0 " position="-15 6 -18.273" >
       <a-entity id="camera" camera   look-controls > 
       
       <!-- light="intensity:1; type:point; penumbra:0"  -->
@@ -31,7 +31,8 @@
       </a-entity>
       </a-entity>
       
-      <a-entity position="6.68098 5.50886 -23.84261" text="align: center; width: 6; wrapCount: 100; value: Gira la vista con el dedo, presiona la pantalla para avanzar." rotation="0 270 0" scale="3.8 3.8 3.8" id="instrucciones">
+      <a-entity position="-12 5.50886 -18.273" 
+      text="align: center; width: 4; wrapCount: 100; value: Mueve la vista arrastrando con el dedo, presiona la pantalla para avanzar." rotation="0 270 0" scale="3.8 3.8 3.8" id="instrucciones">
       </a-entity>
 
 
@@ -42,6 +43,8 @@
       <img id="techo" src="assets/techo.jpeg" >
       <img id="piso" src="assets/piso.jpg" >
       <img id="flyer" src="assets/flyer.jpg" >
+      <img id="flyer2" src="assets/flyer2.jpg" >
+
 
       <!-- Decoración -->
       <a-asset-item id="banana" src="assets/decoracion/banana_comp.glb"></a-asset-item>
@@ -138,9 +141,8 @@
       <a-light type="ambient" intensity="0.4" position="-1 2 1" castShadow="true"></a-light>
 
       <a-entity light="type: spot; angle: 30; groundColor: #fff; penumbra: 1; intensity: 0.3" id="luz flyer" position="2.98532 21.69506 -3.26403" rotation="-110 0 0"></a-entity>
-      <a-box src="#flyer" repeat="1 1" scale="4.5 5.5 0.03536" position="3.47453 6 -0.93211" rotation="" shadow="" material="" geometry="" id="flyer" static-body></a-box>      
-      
-      
+      <a-box src="#flyer" repeat="1 1" scale="9.002 10.80226 0.06366" position="3.58154 6 -0.93211" rotation="" shadow="" material="" geometry="" id="flyer" static-body></a-box>      
+      <a-box src="#flyer2" repeat="1 1" scale="8.94397 10.73276 0.06325" position="14.56815 6 -0.93211" rotation="" shadow="" material="" geometry="" id="flyer2" static-body></a-box>      
       <!-- Paredes externas con colisiones -->
       <a-box src="#pared" repeat="3 1" scale="102.15947 14 0.935" position="32.628 5  0.50203" rotation="0 180 0"  shadow="" material="" geometry="" id="pared trasera" static-body></a-box>     
       <a-box src="#pared" repeat="3 1" scale="102.15947 14 0.935" position="32.628 5  -77.7926" rotation="0 180 0"  shadow="" material="" geometry="" id="pared frontal" static-body></a-box>
@@ -158,9 +160,8 @@
       <!-- <a-light type="directional" intensity="0.7" position="-1 2 1" castShadow="true"></a-light> -->
 
       <a-image src="https://leonvisual.com/wp-content/uploads/2024/10/1.jpg" material="" geometry="" scale="14 10.3 1" id="infografia1" position="-6.706 6.000 -29.406"></a-image>
-      <a-image src="https://leonvisual.com/wp-content/uploads/2024/10/2.jpg" material="" geometry="" scale="14 10.3 1" id="infografia2" position="-6.706 6.000 -29.406"></a-image>
-      <a-image src="https://leonvisual.com/wp-content/uploads/2024/10/3.jpg" material="" geometry="" scale="14 10.3 1" id="infografia3" position="-6.706 6.000 -29.406"></a-image>
-
+      <a-image src="https://leonvisual.com/wp-content/uploads/2024/10/2.jpg" material="" geometry="" scale="14 10.3 1" id="infografia2" position="26.59223 6 -29.406"></a-image>
+      <a-image src="https://leonvisual.com/wp-content/uploads/2024/10/3.jpg" material="" geometry="" scale="14 10.3 1" id="infografia3" position="56.62361 6 -29.406"></a-image>
       
       <!-- Espacio 1 imágenes -->
       <a-entity light="type: ambient; angle: 45; intensity: 0.4" id="luz espacio 1" position="0 10.471 -51.91801"></a-entity>
